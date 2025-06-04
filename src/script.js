@@ -44,7 +44,6 @@ window.onload = () => {
     context = board.getContext("2d")
 
     // draw bird
-
     // load Image
     birdImg = new Image()
     birdImg.src = "/public/flappybird.png"
@@ -106,7 +105,7 @@ function update() {
 
     context.fillStyle = "white"
     context.font = "45px sans-serif"
-    context.fillText(score, 5, 45)
+    context.fillText(score, 10, 45)
 
     if(gameOver) {
         context.fillText("Game Over", board.width / 6, board.height / 2)
